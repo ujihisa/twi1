@@ -24,3 +24,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :test do
 #   gem 'webrat'
 # end
+
+gem "authlogic", :git => "git://github.com/binarylogic/authlogic.git"
+gem "nifty-generators", :git => 'http://github.com/ryanb/nifty-generators.git'
+

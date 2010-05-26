@@ -1,0 +1,15 @@
+ayden:
+  username: ayden
+  email: ayden@example.com
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt('jjjjjj' + 'salt!') %>
+  password_salt: salt!
+brian:
+  username: brian
+  email: brian@example.com
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt('jjjjjj' + 'salt!') %>
+  password_salt: salt!
+charlie:
+  username: charlie
+  email: charlie@example.com
+  crypted_password: <%= Authlogic::CryptoProviders::Sha512.encrypt('jjjjjj' + 'salt!') %>
+  password_salt: salt!

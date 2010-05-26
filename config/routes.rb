@@ -1,4 +1,14 @@
 Twi1::Application.routes.draw do |map|
+  match 'signup' => 'users#new', :as => :signup
+
+  match 'logout' => 'user_sessions#destroy', :as => :logout
+
+  match 'login' => 'user_sessions#new', :as => :login
+
+  resources :user_sessions
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
