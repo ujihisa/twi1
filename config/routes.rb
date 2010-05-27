@@ -1,4 +1,7 @@
 Twi1::Application.routes.draw do |map|
+  post "tweet/create"
+  get "tweet/new"
+
   match 'signup' => 'users#new', :as => :signup
 
   match 'logout' => 'user_sessions#destroy', :as => :logout
@@ -58,7 +61,7 @@ Twi1::Application.routes.draw do |map|
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+  root :to => "tweet#new"
 
   # See how all your routes lay out with "rake routes"
 

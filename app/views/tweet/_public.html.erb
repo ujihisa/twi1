@@ -1,0 +1,14 @@
+<h2>Public Timeline</h2>
+
+<script type='text/javascript'>
+  // copy from new.html.erb
+  Event.observe(window, 'load', function() {
+    var username = '_';
+    var url = '/' + username + '.js?' + (new Date()).valueOf();
+    var script = document.createElement('script');
+    script.setAttribute('src', url);
+    document.getElementsByTagName('head')[0].appendChild(script); 
+  });
+</script>
+
+<div id='timeline'>loading...</div>

@@ -1,0 +1,27 @@
+<h1>Tweet#new</h1>
+
+<div align='right'>
+  <%= link_to "Logout #{@user.username}", logout_path %>
+</div>
+
+<script type='text/javascript'>
+  Event.observe(window, 'load', function() {
+    var username = '<%= @user.username %>';
+    var url = '/' + username + '.js?' + (new Date()).valueOf();
+    var script = document.createElement('script');
+    script.setAttribute('src', url);
+    document.getElementsByTagName('head')[0].appendChild(script); 
+  });
+</script>
+
+<%= form_for :tweets, :url => {:action => 'create'} do |f| %>
+  <p>
+  <%= f.text_field :text, :size => 50 %>
+  </p>
+  <p>
+  <%= f.submit 'tweeeet' %>
+  </p>
+<% end %>
+
+<div id='timeline'>loading...</div>
+
