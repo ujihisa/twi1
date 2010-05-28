@@ -31,7 +31,7 @@ This feature reduces the load time of reading a timeline.
 
 ## The Product "twi1"
 
-I named it "twi1" without thinking anything. That's here. <http://twi1.heroku.net/>
+I named it "twi1" without thinking anything. That's here. <http://twi1.heroku.com/>
 
 Note that currently it doesn't work because heroku doesn't support writing a file. I should look for another way if I use heroku.
 
